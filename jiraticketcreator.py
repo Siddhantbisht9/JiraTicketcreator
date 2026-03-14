@@ -1,12 +1,11 @@
-
 from playwright.sync_api import sync_playwright
 import pandas as pd
 import time
 import sys
 
-CSV_FILE = r"C:/Users/SiddhantBisit/Downloads/myfilejira.csv"
-JIRA_URL = "https://aboutsib.atlassian.net" 
-USER_DATA_DIR = r"C:/Automationforjira/edge_profile"    
+CSV_FILE = r"Path/JiraTicketcreator/JiraTicket.xlsx" #Add the ticket summary and description here
+JIRA_URL = "https://.atlassian.net" #your Jira url
+USER_DATA_DIR = r"path/to/your/edge_profile"    
 WAIT = 15000  
 
 def wait_for_create_button(page):
