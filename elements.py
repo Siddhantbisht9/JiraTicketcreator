@@ -1,49 +1,30 @@
 from playwright.sync_api import sync_playwright
-import keyboard  # pip install keyboard
-import time
 
-def track_jira_elements():
-    with sync_playwright() as p:
-        # Launch Edge (Chromium) — uses "msedge" channel
-        browser = p.chromium.launch(channel="msedge", headless=False)
-        page = browser.new_page()
-        
-        # Go to your Jira instance
-        page.goto("https://aboutsib.atlassian.net")  # <- replace with your Jira URL
-        print("Log in manually (or use existing Edge session), then press ENTER here to continue...")
-        input()  # Wait for manual login or existing session detection
-        
-        print("Page loaded. Press 'q' in this terminal to scan visible elements.")
-        
-        # Wait until 'q' is pressed
-        while True:
-            if keyboard.is_pressed('q'):
-                print("\n=== SCANNING VISIBLE ELEMENTS ===\n")
-                
-                # Scan all buttons
-                all_buttons = page.locator("button").all()
-                print("=== Visible Buttons ===")
-                for i, btn in enumerate(all_buttons):
-                    try:
-                        text = btn.inner_text().strip()
-                        print(f"{i}: '{text}' -> selector: button >> text='{text}'")
-                    except:
-                        pass
-                
-                # Scan all menu items
-                all_menuitems = page.locator("[role='menuitem']").all()
-                print("\n=== Visible Menu Items ===")
-                for i, item in enumerate(all_menuitems):
-                    try:
-                        text = item.inner_text().strip()
-                        print(f"{i}: '{text}' -> selector: [role='menuitem'] >> text='{text}'")
-                    except:
-                        pass
-                
-                print("\nScan complete. Press 'q' again to scan again, or Ctrl+C to exit.")
-                
-                # Avoid multiple triggers
-                time.sleep(1)
+with sync_playwright() as p:
+    browser = p.chromium.launch(channel="msedge", headless=False)
+    context = browser.new_context()
+    page = context.new_page()
 
-if __name__ == "__main__":
-    track_jira_elements()
+    page.goto("https://atlassian.net") #use your Jira url
+
+    print("Login manually and navigate to the page with the Export button...")
+    page.pause()  # Wait for you to do manual navigation
+
+    # Find the three-dots button
+    three_dots = page.get_by_test_id(
+        "issue-navigator-action-export-issues.ui.filter-button--trigger"
+    )
+    print("Three-dots button found:", three_dots.count())
+
+    # Click to open the dropdown
+    three_dots.click()
+
+    # Now find the actual Export menu item
+    export_item = page.get_by_role("menuitem", name="Export Excel CSV (all fields)")
+    export_item.wait_for(state="visible", timeout=10000)
+    print("Export button is visible and ready to click.")
+
+    # Optional: click it
+    # export_item.click()
+
+    browser.close()
