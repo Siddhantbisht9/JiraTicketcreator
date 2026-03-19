@@ -5,7 +5,7 @@ import sys
 
 CSV_FILE = r"Path/JiraTicketcreator/JiraTicket.xlsx" #Add the ticket summary and description here
 JIRA_URL = "https://.atlassian.net" #your Jira url
-USER_DATA_DIR = r"path/to/your/edge_profile"    
+USER_DATA_DIR = r"path/to/your/edge_profile"    #your path to edge profile can be added with the ps file sahred earlier
 WAIT = 15000  
 
 def wait_for_create_button(page):
