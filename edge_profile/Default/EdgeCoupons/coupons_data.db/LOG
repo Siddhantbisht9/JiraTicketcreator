@@ -1,0 +1,6 @@
+2026/02/27-02:04:37.239 9678 Reusing MANIFEST C:\Automationforjira\edge_profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/02/27-02:04:37.241 9678 Recovering log #23
+2026/02/27-02:04:37.242 9678 Reusing old log C:\Automationforjira\edge_profile\Default\EdgeCoupons/coupons_data.db/000023.log 
+2026/02/27-02:04:37.309 9a88 Level-0 table #27: started
+2026/02/27-02:04:37.315 9a88 Level-0 table #27: 681688 bytes OK
+2026/02/27-02:04:37.317 9a88 Delete type=0 #23

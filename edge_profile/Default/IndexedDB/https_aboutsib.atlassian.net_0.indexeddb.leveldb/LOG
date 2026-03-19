@@ -1,0 +1,30 @@
+2026/02/27-02:04:29.680 9a88 Reusing MANIFEST C:\Automationforjira\edge_profile\Default\IndexedDB\https_aboutsib.atlassian.net_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/27-02:04:29.681 9a88 Recovering log #62
+2026/02/27-02:04:29.688 9a88 Reusing old log C:\Automationforjira\edge_profile\Default\IndexedDB\https_aboutsib.atlassian.net_0.indexeddb.leveldb/000062.log 
+2026/02/27-02:06:16.363 4890 Level-0 table #67: started
+2026/02/27-02:06:16.393 4890 Level-0 table #67: 1984598 bytes OK
+2026/02/27-02:06:16.395 4890 Delete type=0 #62
+2026/02/27-02:06:17.883 4890 Compacting 1@1 + 1@2 files
+2026/02/27-02:06:17.922 4890 Generated table #68@1: 10484 keys, 766530 bytes
+2026/02/27-02:06:17.922 4890 Compacted 1@1 + 1@2 files => 766530 bytes
+2026/02/27-02:06:17.923 4890 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/27-02:06:17.925 4890 Delete type=2 #64
+2026/02/27-02:06:17.925 4890 Delete type=2 #67
+2026/02/27-02:10:36.849 4890 Level-0 table #70: started
+2026/02/27-02:10:36.873 4890 Level-0 table #70: 2086156 bytes OK
+2026/02/27-02:10:36.875 4890 Delete type=0 #66
+2026/02/27-02:10:37.285 4890 Compacting 1@1 + 1@2 files
+2026/02/27-02:10:37.319 4890 Generated table #71@1: 10951 keys, 793574 bytes
+2026/02/27-02:10:37.320 4890 Compacted 1@1 + 1@2 files => 793574 bytes
+2026/02/27-02:10:37.320 4890 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/27-02:10:37.321 4890 Delete type=2 #68
+2026/02/27-02:10:37.321 4890 Delete type=2 #70
+2026/02/27-02:14:56.927 4890 Level-0 table #73: started
+2026/02/27-02:14:56.966 4890 Level-0 table #73: 2087034 bytes OK
+2026/02/27-02:14:56.968 4890 Delete type=0 #69
+2026/02/27-02:14:57.133 9a88 Compacting 1@1 + 1@2 files
+2026/02/27-02:14:57.181 9a88 Generated table #74@1: 11449 keys, 843570 bytes
+2026/02/27-02:14:57.181 9a88 Compacted 1@1 + 1@2 files => 843570 bytes
+2026/02/27-02:14:57.182 9a88 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/27-02:14:57.183 9a88 Delete type=2 #71
+2026/02/27-02:14:57.183 9a88 Delete type=2 #73

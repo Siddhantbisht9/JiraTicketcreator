@@ -1,0 +1,6 @@
+2026/02/26-22:10:30.288 5f98 Reusing MANIFEST C:\Automationforjira\edge_profile\Default\EdgeCoupons/coupons_data.db/MANIFEST-000001
+2026/02/26-22:10:30.292 5f98 Recovering log #19
+2026/02/26-22:10:30.293 5f98 Reusing old log C:\Automationforjira\edge_profile\Default\EdgeCoupons/coupons_data.db/000019.log 
+2026/02/26-22:10:30.393 adb8 Level-0 table #24: started
+2026/02/26-22:10:30.399 adb8 Level-0 table #24: 681688 bytes OK
+2026/02/26-22:10:30.400 adb8 Delete type=0 #19

@@ -1,0 +1,14 @@
+2026/02/26-22:10:24.956 adb8 Reusing MANIFEST C:\Automationforjira\edge_profile\Default\IndexedDB\https_aboutsib.atlassian.net_0.indexeddb.leveldb/MANIFEST-000001
+2026/02/26-22:10:24.956 adb8 Recovering log #58
+2026/02/26-22:10:24.961 adb8 Reusing old log C:\Automationforjira\edge_profile\Default\IndexedDB\https_aboutsib.atlassian.net_0.indexeddb.leveldb/000058.log 
+2026/02/26-22:10:24.962 adb8 Delete type=2 #56
+2026/02/26-22:10:24.962 adb8 Delete type=2 #59
+2026/02/26-22:11:19.471 adb8 Level-0 table #63: started
+2026/02/26-22:11:19.490 adb8 Level-0 table #63: 1853893 bytes OK
+2026/02/26-22:11:19.492 adb8 Delete type=0 #58
+2026/02/26-22:11:37.436 94c8 Compacting 1@1 + 1@2 files
+2026/02/26-22:11:37.468 94c8 Generated table #64@1: 10027 keys, 736415 bytes
+2026/02/26-22:11:37.469 94c8 Compacted 1@1 + 1@2 files => 736415 bytes
+2026/02/26-22:11:37.470 94c8 compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/02/26-22:11:37.471 94c8 Delete type=2 #60
+2026/02/26-22:11:37.471 94c8 Delete type=2 #63
